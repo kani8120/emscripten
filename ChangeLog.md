@@ -17,6 +17,9 @@ See docs/process.md for how version tagging works.
 
 Current Trunk
 -------------
+- Remove emterpreter and ``EMTERPRETIFY`` settings.  Emterpreter has largerly
+  been replaced by asyncify and is fastcomp only so due for removing in
+  the near future anyway.
 
 1.39.15: 05/06/2020
 -------------------
