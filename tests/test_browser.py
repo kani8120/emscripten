@@ -3287,6 +3287,7 @@ window.close = function() {
     'empty_list': (['-DBAD', '-s', 'ASYNCIFY_IMPORTS=[]'],), # noqa
     'em_js_bad': (['-DBAD', '-DUSE_EM_JS'],), # noqa
   })
+  @no_fastcomp('wasm backend asyncify specific')
   def test_async_returnvalue(self, args):
     if '@' in str(args):
       create_test_file('filey.txt', '["sync_tunnel"]')
